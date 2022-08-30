@@ -1,0 +1,41 @@
+// Pre-Decrement Operator
+// 30 Aug 2022
+
+#include <stdio.h>
+
+int main() {
+   int i=4;
+   printf ("Value of i is %d. \n",i);
+   i--;
+   printf ("Value of i is %d. \n",i);
+   printf ("-----------\n");
+  
+   int x;
+   x=--i;
+   printf ("Value of i is %d. \n",i);
+   printf ("Value of x = %d",x);
+   
+   return 0;
+}
+
+
+
+// Post-Decrement Operator
+// 30 Aug 2022
+
+#include <stdio.h>
+
+int main() {
+   int i=4;
+   printf ("Value of i is %d. \n",i);
+   i--;
+   printf ("Value of i is %d. \n",i);
+   printf ("**********\n");
+  
+   int x;
+   x=i--;
+   printf ("Value of i is %d. \n",i);
+   printf ("Value of x = %d",x);
+   
+   return 0;
+}
