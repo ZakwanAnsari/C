@@ -1,0 +1,39 @@
+// Pre-Increment Operator
+// 30 Aug 2022
+
+#include <stdio.h>
+
+int main() {
+   int i=4;
+   printf ("Value of i is %d. \n",i);
+   i++;
+   printf ("Value of i is %d. \n",i);
+   printf ("-----------\n");
+   int x;
+   x=++i;
+   printf ("Value of i is %d. \n",i);
+   printf ("Value of x is %d.",x);
+   
+   return 0;
+}
+
+
+// Post-Increment Operator
+// 30 Aug 2022
+
+#include <stdio.h>
+
+int main() {
+   int i=4;
+   printf ("Value of i is %d. \n",i);
+   i++;
+   printf ("Value of i is %d. \n",i);
+   printf ("-----------\n");
+  
+   int x;
+   x=i++;
+   printf ("Value of i is %d. \n",i);
+   printf ("Value of x is %d.",x);
+   
+   return 0;
+}
