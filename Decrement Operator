@@ -30,7 +30,7 @@ int main() {
    printf ("Value of i is %d. \n",i);
    i--;
    printf ("Value of i is %d. \n",i);
-   printf ("**********\n");
+   printf ("------------\n");
   
    int x;
    x=i--;
