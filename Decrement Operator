@@ -13,7 +13,7 @@ int main() {
    int x;
    x=--i;
    printf ("Value of i is %d. \n",i);
-   printf ("Value of x = %d",x);
+   printf ("Value of x is %d",x);
    
    return 0;
 }
@@ -35,7 +35,7 @@ int main() {
    int x;
    x=i--;
    printf ("Value of i is %d. \n",i);
-   printf ("Value of x = %d",x);
+   printf ("Value of x is %d",x);
    
    return 0;
 }
