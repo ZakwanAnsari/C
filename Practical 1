@@ -1,0 +1,16 @@
+// Write 'C' program using constants, variables and arithmetic op.
+// Author: Zakwan Ansari
+// Date: 06/09/2022
+#include <stdio.h>
+
+int main() {
+    const float pi=3.14;
+    float A;
+    int r;
+    printf("Enter radius of the circle\n");
+    scanf("%d",&r);
+    A=pi*r*r;
+    printf("Area of cirlce is %f",A);
+
+    return 0;
+}
