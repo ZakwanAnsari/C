@@ -1,0 +1,18 @@
+//Author: Zakwan Ansari
+//Date: 13/09/2022
+//Practical No.1: Addition of two variables
+#include <stdio.h>
+
+int main() {
+    int a;
+    int b;
+    int c;
+    printf("Enter first variable \n");
+    scanf("%d",&a);
+    printf("Enter second variable \n");
+    scanf("%d",&b);
+    c=a+b;
+    printf("The sum of the two numbers is %d",c);
+
+    return 0;
+}
