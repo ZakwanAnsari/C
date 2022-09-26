@@ -1,0 +1,21 @@
+/*Practical No. 5: Write a program to accept the value of
+year as input from the keyword and print whether it is
+a leap year or not
+Author: Ansari Zakwan
+Date: 26/09/2022
+*/
+#include <stdio.h>
+
+int main() {
+    int year;
+    printf("Enter year :");
+    scanf("%d",&year);
+    if(year%4==0){
+        printf("It is a leap year");
+    }
+    else{
+        printf("It is not a leap year");
+    }
+
+    return 0;
+}
