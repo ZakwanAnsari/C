@@ -1,0 +1,22 @@
+/*9.2.2
+Write a program to print first 'n' consecutive number using
+while loop
+Name:Ansari Zakwan
+Date:04/10/2022
+*/
+#include <stdio.h>
+
+int main() {
+    int n;
+    int sum=0;
+    printf("Enter number to be printed the sum of:");
+    scanf("%d",&n);
+    int i=1;
+    while(i<=n)
+    {
+        sum=sum+i;
+        i++;
+    }
+    printf("sum of first %d consecutive numbers is:%d\n",n,sum);
+    return 0;
+}
