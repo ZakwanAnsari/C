@@ -1,0 +1,21 @@
+/*9.1.1
+Write a program to print sum of first 'n' consecutive number using for loop
+Name:Ansari Zakwan
+Date:04/10/2022
+*/
+#include <stdio.h>
+
+int main() {
+    int n;
+    int sum=0;
+    printf("Enter number to be printed the sum of:");
+    scanf("%d",&n);
+    for(int i=1;i<=n;i++)
+    {
+        sum=sum+i;
+        printf("sum of first %d numbers:%d\n",i,sum);
+        
+    }
+
+    return 0;
+}
