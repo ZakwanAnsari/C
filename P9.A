@@ -1,0 +1,22 @@
+/*
+P9.A: Find sum of digits of given number
+Author: Ansari Zakwan
+Date: 10/10/2022
+*/
+#include <stdio.h>
+
+int main() {
+    int i,n,m,sum=0;
+    printf("Enter number:");
+    scanf("%d",&n);
+    
+    for(i=1;n!=0;i++)
+    {
+        m=n%10;
+        sum=sum+m;
+        n=n/10;
+    }
+    printf("sum=%d",sum);
+
+    return 0;
+}
