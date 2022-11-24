@@ -1,0 +1,14 @@
+//Math functions
+#include <stdio.h>
+#include <math.h>
+
+void main() {
+    float a;
+    printf("Enter value of a:");
+    scanf("%f",&a);
+    printf("Ceil=%0.0f\n",ceil(a));
+    printf("Floor=%0.0f\n",floor(a));
+    printf("Square root of a=%f\n",sqrt(a));
+    printf("Square of a=%f\n",pow(a,2));
+
+}
