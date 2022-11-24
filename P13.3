@@ -1,0 +1,21 @@
+//P13.3:String functions(strcmp)
+#include <stdio.h>
+#include <string.h>
+
+void main() 
+{
+    char a[20],b[20];
+    printf("Enter variable a:");
+    scanf("%s",&a);
+    printf("Enter variable b:");
+    scanf("%s",&b);
+    if(strcmp(a,b)==0)
+    {
+        printf("Strings are equal.");
+    }
+    else
+    {
+        printf("Strings are not equal.");
+    }
+
+}
