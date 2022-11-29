@@ -1,0 +1,19 @@
+//P14.1: Swap two numbers by using function (Call by value).
+#include <stdio.h>
+
+void main()
+{
+    int a=5,b=10;
+    swap(a,b);
+
+}
+
+void swap(int x, int y)
+{
+    printf("Before Swap: Value of x=%d and y=%d.\n",x,y);
+    int temp;
+    temp=x;
+    x=y;
+    y=temp;
+    printf("After Swap: Value of x=%d and y=%d.\n",x,y);
+}
