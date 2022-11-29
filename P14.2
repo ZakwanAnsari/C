@@ -1,0 +1,19 @@
+//P14.2: Swap two numbers by using function (Call by reference).
+#include <stdio.h>
+
+void main()
+{
+    int a=5,b=10;
+    printf("Before Swap: Value of a=%d and b=%d.\n",a,b);
+    swap(&a,&b);
+    printf("After Swap: Value of a=%d and b=%d.",a,b);
+
+}
+
+void swap(int *x, int *y)
+{
+    int temp;
+    temp=*x;
+    *x=*y;
+    *y=temp;
+}
