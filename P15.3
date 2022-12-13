@@ -1,0 +1,66 @@
+//P15.3: Calculator using Pointer Function
+#include <stdio.h>
+
+int add(int x, int y)
+{
+    return x+y;
+}
+
+int sub(int x, int y)
+{
+    return x-y;
+}
+
+int mul(int x, int y)
+{
+    return x*y;
+}
+
+int div(int x, int y)
+{
+    return x/y;
+}
+
+void main()
+{
+    int a,b,opt,ret;
+    int (*funptr)(int,int);
+    
+    printf("Simple Calculator\n");
+    printf("Enter value of a:");
+    scanf("%d",&a);
+    printf("Enter value of b:");
+    scanf("%d",&b);
+    printf("Select Operation\n");
+    printf("Type 1 for addition\n");
+    printf("Type 2 for subtraction\n");
+    printf("Type 3 for multiplication\n");
+    printf("Type 4 for division\n");
+    scanf("%d",&opt);
+    
+    switch(opt)
+    {
+        case 1:
+            funptr=&add;
+            ret=funptr(a,b);
+            printf("Your answer is %d",ret);
+            break;
+        case 2:
+            funptr=&sub;
+            ret=funptr(a,b);
+            printf("Your answer is %d",ret);
+            break;
+        case 3:
+            funptr=&mul;
+            ret=funptr(a,b);
+            printf("Your answer is %d",ret);
+            break;
+        case 4:
+            funptr=&div;
+            ret=funptr(a,b);
+            printf("Your answer is %d",ret);
+            break;
+        default:
+        printf("Invalid input");
+    }
+}
