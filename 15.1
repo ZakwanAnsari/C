@@ -1,0 +1,14 @@
+//P15.1: Value and Address of variable and pointer
+#include <stdio.h>
+
+void main() {
+    int a=10;
+    int *p=&a;
+    
+    printf("Value of a is %d\n",a);
+    printf("Address of a is %u\n",&a);
+    printf("Value of p is %d\n",p);
+    printf("Address of p is %u\n",&p);
+    printf("Value of a using pointer is %d\n",*p);
+    
+}
