@@ -1,0 +1,20 @@
+//P15.2: Function Pointer
+#include <stdio.h>
+
+int add(int a, int b){
+    return a+b;
+    
+}
+
+void main() {
+    int x,y,ret;
+    x=10;
+    y=20;
+    
+    int (*funptr)(int,int);
+    funptr=&add;
+    
+    ret=funptr(x,y);
+    printf("Sum is %d",ret);
+
+}
