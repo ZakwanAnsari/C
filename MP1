@@ -1,0 +1,41 @@
+#include <stdio.h>
+
+int main() {
+    int a,b,add,sub,mul,div,opt;
+    printf("Simple Calculator\n") ;
+    printf("Enter first number:");
+    scanf("%d",&a);
+    printf("Enter second number:");
+    scanf("%d",&b);
+    printf("Menu\n");
+    printf("1:Addition\n");
+    printf("2:Subtraction\n");
+    printf("3:Multiplication\n");
+    printf("4:Division\n");
+    printf("Enter any 1 option(1-4):");
+    scanf("%d",&opt);
+    
+    switch(opt)
+    {
+    case 1:
+        add=a+b;
+        printf("Addition of the two numbers is %d.",add);
+        break;
+    case 2:
+        sub=a-b;
+        printf("Subtraction of the two numbers is %d.",sub);
+        break;
+    case 3:
+        mul=a*b;
+        printf("Multiplication of the two numbers is %d.",mul);
+        break;
+    case 4:
+        div=a/b;
+        printf("Division of the two numbers is %d.",div);
+        break;
+    default:
+        printf("Invalid option!");
+    }
+
+    return 0;
+}
