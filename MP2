@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main() {
+
+  char ARTHEMATICS;
+ float  NUM1,NUM2;
+  printf("          LETS SOLVE THE SUM BY CLICKING  ENTER\n");
+  printf("\nSTART WITH SELECTING VALID  ARTHEMATIC \n      (+,-,*,/):");
+  scanf("%c", &ARTHEMATICS);
+  printf(" START WITH ENTERING TWO___NUMBERS  : ");
+  scanf("%f %f", &NUM1 , &NUM2);
+  
+
+  switch (ARTHEMATICS) {
+    case '+':
+      printf("%0.f + %0.f = %0.f\n", NUM1, NUM2, NUM1 + NUM2);
+      break;
+    case '-':
+      printf("%0.f - %0.f = %0.f\n", NUM1, NUM2, NUM1 - NUM2);
+      break;
+    case '*':
+      printf("%0.f * %0.f = %0.f\n", NUM1, NUM2, NUM1 * NUM2);
+      break;
+    case '/':
+      printf("%0.f / %0.f = % 0.f\n", NUM1, NUM2, NUM1 / NUM2);
+      break;
+    
+    default:
+      printf("ENTERED ARTHEMATIC IS NOT CORRECT PLESE RECHECK IT");
+  }
+
+  return 0;
+}
