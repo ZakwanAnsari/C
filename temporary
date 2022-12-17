@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+void main()
+{
+    char op;
+    float a,b;
+    printf("Enter first variable, a:");
+    scanf("%f",&a);
+    printf("Enter second variable b:");
+    scanf("%f",&b);
+    printf("Select Mathematical Operation\n");
+    printf("Enter an operator(+,-,*,/)");
+    scanf("%c",&op);
+    
+    switch (op)
+    {
+        case '+':
+            printf("%.1f + %0.1f = %.1f ",a,b,a+b);
+            break;
+        case '-':
+            printf("%.1f + %0.1f = %.1f ",a,b,a-b);
+            break;
+        case '*':
+            printf("%.1f + %0.1f = %.1f ",a,b,a*b);
+            break;
+        case '/':
+            printf("%.1f + %0.1f = %.1f ",a,b,a/b);
+            break;
+        default:
+            printf("\nInvalid input!");
+    }
+    
+}
